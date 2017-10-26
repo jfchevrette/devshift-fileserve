@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: devshift-fileserve
+spec:
+  host: devshift-fileserve
+  to:
+    kind: Service
+    name: devshift-fileserve
+    weight: 100
